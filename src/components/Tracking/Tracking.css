@@ -1,0 +1,153 @@
+@font-face {
+  font-family: GothamRounded;
+  src: url(../../assets/GothamRounded/GothamRounded-Bold.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../../assets/GothamRounded/GothamRounded-Light.otf);
+}
+
+/*==========================SCROLL PERSONALIZADO DEL DIRECTORIO======================================*/
+.contentDirectory::-webkit-scrollbar {
+  -webkit-appearance:none;
+}
+
+.contentDirectory::-webkit-scrollbar:vertical {
+  width:9px;
+}
+
+.contentDirectory::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.contentDirectory::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contentDirectory::-webkit-scrollbar-thumb {
+  background-color: #780727;
+  border-radius: 10px;
+  border: 2px solid #FFF;
+}
+
+.contentDirectory::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+/*======================================================================================*/
+
+.middle {
+  display: flex;
+}
+
+.contentTracking{
+  width: 80vw;
+  height: 91vh;
+  display: flex;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.seguimiento{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.img-check, .line{
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 8%;
+  align-items: center;
+  color: rgb(113, 181, 126);
+}
+
+.enviado, .proceso, .archivado{
+  display: flex;
+}
+
+.detalle-enviado{
+  display: flex;
+  flex-direction: column;
+  width: 73%;
+  font-family: Gotham;
+  
+}
+
+.numOficio{
+  display: flex;
+  color:black;
+  font-family: Gotham;
+  margin-bottom: 50px;
+}
+
+.name-contact{
+  font-family: GothamRounded;
+}
+
+.tracking{
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonBack {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonBack i {
+color: #780727;
+cursor: pointer;
+}
+
+.TitlePage{
+  color:black;
+  margin-top: -3px;
+  font-family: Gotham;
+}
+
+.Search input{
+  width:100%;
+  font-family: Gotham;
+  border: none;
+  outline: none;
+}
+
+.icon-search{
+  border: none;
+  color: rgb(61, 61, 61);
+}
+
+
+.line{
+  color: dimgray;
+  align-items: center;
+}
+
+.info-gral{
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.remitente{
+  border: solid #780727 2px;
+  height: 15vh;
+  width: 25vw;
+}
+
+.destinatario{
+  border: solid #780727 2px;
+  height: 15vh;
+  width: 25vw;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+}

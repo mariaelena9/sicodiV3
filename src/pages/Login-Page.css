@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    width: 100vw;
+    height: 91vh;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: #57061d;
+    justify-content: center;
+    align-items: center;
+}
+
+.nayaritLogo{
+    width: 70%;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+}

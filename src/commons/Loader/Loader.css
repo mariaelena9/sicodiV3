@@ -1,0 +1,44 @@
+:root {
+  --primario: #780727;
+  --blanco: #fff;
+  --oscuro: rgba(0, 0, 0, 0.1);
+  --gris: #888;
+}
+
+.loaderContent {
+  display: flex;
+  width: 100vw;
+  height: 91vh;
+}
+
+.leftSide{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.nayaritLogo{
+  width: 70%;
+}
+
+.firstText {
+  color: var(--gris);
+  font-size: 28px;
+  font-family: Gotham;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.firstText span {
+  color: var(--primario);
+  font-family: GothamRounded;
+}
+
+.loader_rightSide {
+  display: flex;
+  width: 75vw;
+  justify-content: center;
+  align-items: center;
+}

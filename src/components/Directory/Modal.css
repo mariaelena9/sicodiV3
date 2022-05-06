@@ -1,0 +1,77 @@
+.modal {
+  position: fixed;
+  top: 14vh;
+  left: 5vw;
+  width: 95vw;
+  height: 86vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background: #E7E7E7;
+  top: 22vh;
+  left: 20vw;
+  width: 60vw;
+  padding: 15px;
+  margin: auto;
+  border-radius: 5px;
+  height: 70vh;
+  animation-duration: 0.7s;
+  animation-name: slidein;
+}
+
+.modalButton {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.modalName {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.modalEmail,
+.modalPos,
+.modalPhone {
+  display: flex;
+  margin: 10px;
+  width: 50%;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+  opacity: 0;
+}
+
+@keyframes slidein {
+  from {
+    left: 100vw;
+  }
+
+  to {
+    left: 30vw;
+  }
+}

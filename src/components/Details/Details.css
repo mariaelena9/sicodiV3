@@ -1,0 +1,132 @@
+/*==========================SCROLL PERSONALIZADO DEL DIRECTORIO======================================*/
+.detailscontent::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.detailscontent::-webkit-scrollbar:vertical {
+    width: 9px;
+}
+
+.detailscontent::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+.detailscontent::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.detailscontent::-webkit-scrollbar-thumb {
+    background-color: #780727;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+}
+
+.detailscontent::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/*======================================================================================*/
+
+.detailsmiddle {
+    display: flex;
+}
+
+.detailscontent {
+    width: 95vw;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: popup;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.basicInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: solid #780727 2px;
+}
+
+.infoIzq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoDer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bodyMes {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.files {
+    width: 50%;
+}
+
+.actions {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(25%, 25%));
+    gap: 10px;
+    width: 50%;
+}
+
+.download {
+    background-color: #75A1CF;
+    width: 100%;
+}
+
+.download:hover {
+    background-color: #3b5168;
+}
+
+.follow {
+    background-color: #D1B173;
+    width: 100%;
+}
+
+.follow:hover {
+    background-color: #625334;
+}
+
+.set {
+    background-color: #B5818A;
+    width: 100%;
+}
+
+.set:hover {
+    background-color: #6d4e53;
+}
+
+.answer {
+    background-color: #71B57E;
+    width: 100%;
+}
+
+.answer:hover {
+    background-color: #3d6244;
+}

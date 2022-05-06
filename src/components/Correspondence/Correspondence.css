@@ -1,0 +1,165 @@
+:root {
+  --primario: #780727;
+  --blanco: #fff;
+  --oscuro: rgba(0, 0, 0, 0.1);
+  --gris: #888;
+  --negro: #000;
+}
+
+@font-face {
+  font-family: GothamRounded;
+  src: url(../../assets/GothamRounded/GothamRounded-Bold.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../../assets/GothamRounded/GothamRounded-Light.otf);
+}
+
+
+/*==========================SCROLL PERSONALIZADO DE CORRESPONDENCIA======================================*/
+.correspondencecontent::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.correspondencecontent::-webkit-scrollbar:vertical {
+  width: 9px;
+}
+
+.correspondencecontent::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.correspondencecontent::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.correspondencecontent::-webkit-scrollbar-thumb {
+  background-color: var(--primario);
+  border-radius: 10px;
+  border: 2px solid #FFF;
+}
+
+.correspondencecontent::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/*======================================================================================*/
+
+.body {
+  font-family: Gotham;
+}
+
+.middle {
+  display: flex;
+}
+
+.formatodiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.correspondencecontent {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  height: 86vh;
+  padding: 20px;
+  overflow: scroll;
+  animation-duration: 1s;
+  animation-name: popup;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.buttonBack i {
+  color: #780727;
+  cursor: pointer;
+}
+
+.buttonBack p {
+  margin-top: -7px;
+  font-size: 1.7rem;
+  color: var(--negro);
+  font-family: Gotham;
+  margin-left: 1.2rem;
+}
+
+.dates {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.originInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.originInfo button{
+  width: 100px;
+}
+
+.btnFisica, .btnDigital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0px 10px 12px rgba(54, 44, 44, 0.5);
+  line-height: 2;
+  
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 2rem;
+  font-family: GothamRounded;
+  border-radius: .4rem;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.btnFisica {
+  background-image: url(../../assets/fisica.jpg);
+}
+
+.btnDigital {
+  background-image: url(../../assets/digital.jpg);
+}
+
+.btnFisica, .btnDigital {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fileButton {
+  background-color: #780727;
+  color: white;
+}
+
+
+.btnFisica:hover, .btnDigital:hover {
+  filter: opacity(.5);
+}
+
+.select {
+  height: auto;
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px;
+}

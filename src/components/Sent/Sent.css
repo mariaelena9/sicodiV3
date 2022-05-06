@@ -1,0 +1,142 @@
+/*==========================SCROLL PERSONALIZADO DEL DIRECTORIO======================================*/
+.sentcontent::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.sentcontent::-webkit-scrollbar:vertical {
+    width: 9px;
+}
+
+.sentcontent::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+.sentcontent::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.sentcontent::-webkit-scrollbar-thumb {
+    background-color: #780727;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+}
+
+.sentcontent::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/*======================================================================================*/
+.filtersDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.filtersDiv .filterInd {
+    display: flex;
+    flex-direction: column;
+}
+
+.filterInd input, .filterInd select{
+    padding: 5px;
+    border: solid #780727 2px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.sentmiddle {
+    display: flex;
+}
+
+.sentcontent {
+    width: 95vw;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding: 20px;
+    animation-duration: 1s;
+    animation-name: popup;
+}
+
+@keyframes popup {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.filtersbtn button {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.filtersbtn .btnall {
+    background-color: #7184B5;
+}
+
+.filtersbtn .btnall:hover {
+    background-color: #3a455f;
+}
+
+.filtersbtn .btnproc {
+    background-color: #B57171;
+}
+
+.filtersbtn .btnproc:hover {
+    background-color: #754949;
+}
+
+.filtersbtn .btnsent {
+    background-color: #D1B173;
+}
+
+.filtersbtn .btnsent:hover {
+    background-color: #826e46;
+}
+
+.filtersbtn .btnstore {
+    background-color: #71B57E;
+}
+
+.filtersbtn .btnstore:hover {
+    background-color: #3d6244;
+}
+
+.sentsearch {
+    display: flex;
+    border: solid #780727 2px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.sentsearch input {
+    width: 100%;
+    font-family: Gotham;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.sentrow {
+    border-bottom: solid #780727 2px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.sentrow:hover {
+    background-color: rgb(211, 209, 209);
+}
+
+td {
+    padding: 10px;
+}

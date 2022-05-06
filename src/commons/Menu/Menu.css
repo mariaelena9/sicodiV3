@@ -1,0 +1,116 @@
+:root {
+  --primario: #780727;
+  --primarioOscuro: #380212;
+  --blanco: #fff;
+}
+
+@font-face {
+  font-family: GothamRounded;
+  src: url(../../assets/GothamRounded/GothamRounded-Bold.otf);
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../../assets/GothamRounded/GothamRounded-Light.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: GothamRounded;
+}
+
+/*================================================================================================*/
+
+nav ul li:hover {
+  background: var(--primarioOscuro);
+}
+
+nav ul li a {
+  color: var(--blanco);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.nav__bar {
+  width: 5vw;
+  background-color: var(--primario);
+  height: 86vh;
+}
+
+/* .navegacion {
+    background: black;
+    height: 100%;
+    background-color: pink;
+} */
+
+/* MENUUUUU */
+
+.menuss {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: sticky;
+  z-index: 9000;
+}
+
+.menuss a span:first-child {
+  display: inline-block;
+  padding: 6px;
+}
+
+.menuss a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.menuss a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+li:hover span:last-child {
+  display: flex;
+}
+
+li {
+  width: 5vw;
+}
+
+li:hover {
+  width: 20vw;
+}
+
+.menuss a span {
+  transition: transform 0.5s ease-out;
+}
+
+.menuss a:hover span:first-child {
+  transform: translateX(12%);
+}
+
+.menuss a:hover span:last-child {
+  transform: none;
+}
